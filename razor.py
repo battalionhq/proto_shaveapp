@@ -11,5 +11,14 @@ class Razor(object):
 
 
 	def shave(self):
-		pass
+		if self.currentPhase == 1:
+			print "Use side B of razor"
+		elif self.currentPhase ==2:
+			print "flip blade and use side A"
+		elif self.currentPhase ==3:
+			print "Use side B of razor"
+		elif self.currentPhase ==4:
+			print "change blade and start with side A"
+		self.currentPhase +=1
+
 			
